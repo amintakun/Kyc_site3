@@ -1,52 +1,43 @@
-const services = [
+const exchangeServices = [
   {
     id: "binance",
     name: "احراز هویت بایننس",
     desc: "KYC سریع و مطمئن برای صرافی Binance",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/5/57/Binance_Logo.svg",
   },
   {
     id: "kucoin",
     name: "احراز هویت کوکوین",
     desc: "KYC با مدارک ایرانی برای صرافی KuCoin",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/8/8b/KUCOIN.svg",
   },
   {
     id: "gate",
     name: "احراز هویت گیت",
     desc: "احراز سطح ۱ و ۲ صرافی Gate.io",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Gateio_logo.svg",
   },
   {
     id: "mexc",
     name: "احراز هویت مکسی",
     desc: "KYC فوری برای صرافی MEXC",
-    image:
-      "https://seeklogo.com/images/M/mexc-global-logo-7B0C45F5F4-seeklogo.com.png",
   },
+];
+
+const freelanceServices = [
   {
     id: "fiverr",
     name: "احراز حساب فریلنسری",
     desc: "تأیید هویت حساب‌های Fiverr و سایت‌های مشابه",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/8/8c/Fiverr_Logo.svg",
   },
   {
     id: "other",
     name: "سایر سایت‌ها",
-    desc: "احراز هویت سایت‌ها و سرویس‌های دیگر",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg",
+    desc: "احراز هویت سایت‌ها و سرویس‌های دیگر به صورت اختصاصی",
   },
 ];
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* هدر مشکی با تم بایننس */}
+      {/* هدر */}
       <header className="sticky top-0 z-20 border-b border-yellow-400/60 bg-black text-white">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -71,67 +62,86 @@ export default function Home() {
         </div>
       </header>
 
-      {/* متن بالای کارت‌ها */}
-      <main className="max-w-5xl mx-auto px-4 py-5">
-        <section className="mb-4">
+      <main className="max-w-5xl mx-auto px-4 py-5 space-y-8">
+        {/* توضیح کلی */}
+        <section>
           <h1 className="text-xl font-extrabold text-gray-900 mb-1">
             انتخاب صرافی یا سایت برای احراز هویت
           </h1>
           <p className="text-xs text-gray-600">
-            روی هر کارت بزنید تا با همان سرویس مستقیماً در تلگرام برای احراز
-            هویت گفتگو را شروع کنید.
+            از بین دسته‌های زیر، سرویس مورد نیازتان را انتخاب کنید. با لمس هر
+            کارت، گفتگو در تلگرام برای همان سرویس شروع می‌شود.
           </p>
         </section>
 
-        {/* گرید کارت‌ها مثل گیفت‌کارت */}
-        <section className="grid grid-cols-2 sm:grid-cols-3 gap-3 pb-8">
-          {services.map((s) => (
-            <a
-              key={s.id}
-              href={`https://t.me/YourUsername?start=${s.id}-kyc`}
-              className="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-[0_4px_14px_rgba(0,0,0,0.04)] active:scale-[0.98] transition-transform"
-            >
-              {/* بالا: لوگو */}
-              <div className="h-20 w-full bg-gray-100 flex items-center justify-center">
-                <img
-                  src={s.image}
-                  alt={s.name}
-                  className="max-h-14 max-w-[80%] object-contain"
-                  loading="lazy"
-                />
-              </div>
-
-              {/* پایین: متن کارت */}
-              <div className="px-2.5 py-2">
+        {/* دسته صرافی‌ها */}
+        <section>
+          <h2 className="text-sm font-bold text-gray-900 mb-2">
+            صرافی‌ها (KYC Exchange)
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {exchangeServices.map((s) => (
+              <a
+                key={s.id}
+                href={`https://t.me/YourUsername?start=${s.id}-kyc`}
+                className="border border-gray-200 rounded-xl bg-white shadow-[0_4px_14px_rgba(0,0,0,0.04)] px-3 py-3 flex flex-col justify-between active:scale-[0.98] transition-transform"
+              >
                 <p className="text-[11px] font-semibold text-gray-900 line-clamp-2">
                   {s.name}
                 </p>
-                <p className="mt-1 text-[10px] text-gray-600 line-clamp-2">
+                <p className="mt-1 text-[10px] text-gray-600 line-clamp-3">
                   {s.desc}
                 </p>
                 <div className="mt-2 flex items-center gap-1 text-[10px] text-yellow-700">
                   <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
                   <span>شروع احراز در تلگرام</span>
                 </div>
-              </div>
-            </a>
-          ))}
+              </a>
+            ))}
+          </div>
         </section>
 
-        {/* باکس تماس پایین صفحه */}
-        <section className="mb-10 rounded-2xl border border-yellow-400/50 bg-yellow-50 px-4 py-3">
-          <h2 className="text-sm font-bold text-gray-900 mb-1">
-            نیاز به مشاوره قبل از احراز دارید؟
+        {/* دسته فریلنسری و سایر سایت‌ها */}
+        <section>
+          <h2 className="text-sm font-bold text-gray-900 mb-2">
+            سایت‌های فریلنسری و سایر سرویس‌ها
           </h2>
-          <p className="text-[11px] text-gray-700 mb-2">
-            اگر مطمئن نیستید کدام صرافی یا سایت برای شما مناسب است، در تلگرام
-            پیام بدهید تا راهنمایی‌تان کنیم.
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {freelanceServices.map((s) => (
+              <a
+                key={s.id}
+                href={`https://t.me/YourUsername?start=${s.id}-kyc`}
+                className="border border-gray-200 rounded-xl bg-white shadow-[0_4px_14px_rgba(0,0,0,0.04)] px-3 py-3 flex flex-col justify-between active:scale-[0.98] transition-transform"
+              >
+                <p className="text-[11px] font-semibold text-gray-900 line-clamp-2">
+                  {s.name}
+                </p>
+                <p className="mt-1 text-[10px] text-gray-600 line-clamp-3">
+                  {s.desc}
+                </p>
+                <div className="mt-2 flex items-center gap-1 text-[10px] text-yellow-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
+                  <span>شروع احراز در تلگرام</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        {/* بخش ثبت نظر */}
+        <section className="mb-10 rounded-2xl border border-gray-200 bg-gray-50 px-4 py-4 space-y-2">
+          <h2 className="text-sm font-bold text-gray-900">
+            ثبت نظر و امتیاز درباره خدمات
+          </h2>
+          <p className="text-[11px] text-gray-700">
+            اگر از خدمات احراز هویت استفاده کرده‌اید، لطفاً نظر و پیشنهاد خود را
+            بفرستید تا کیفیت کار بهتر شود.
           </p>
           <a
             href="https://t.me/YourUsername"
             className="inline-block text-xs bg-black text-yellow-300 px-3 py-1.5 rounded-full font-semibold"
           >
-            گفتگوی مستقیم در تلگرام
+            ارسال نظر در تلگرام
           </a>
         </section>
       </main>
