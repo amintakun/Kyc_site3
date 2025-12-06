@@ -53,34 +53,34 @@ export default function Home() {
       <header className="sticky top-0 z-20 border-b border-yellow-400/60 bg-black text-white">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-md bg-yellow-400 flex items-center justify-center text-black font-extrabold text-lg">
+            <div className="w-9 h-9 rounded-md bg-yellow-400 flex items-center justify-center text-black font-extrabold text-xl">
               K
             </div>
             <div className="flex flex-col leading-tight">
-              <span className="text-sm font-semibold text-yellow-300">
+              <span className="text-base font-semibold text-yellow-300">
                 KYC Services
               </span>
-              <span className="text-[11px] text-gray-300">
+              <span className="text-[12px] text-gray-300">
                 احراز هویت صرافی‌ها و سایت‌های فریلنسری
               </span>
             </div>
           </div>
           <a
             href="https://t.me/YourUsername"
-            className="text-xs bg-yellow-400 text-black px-3 py-1.5 rounded-full font-semibold hover:bg-yellow-300"
+            className="text-sm bg-yellow-400 text-black px-4 py-1.5 rounded-full font-semibold hover:bg-yellow-300"
           >
             گفتگو در تلگرام
           </a>
         </div>
       </header>
 
-      <main className="max-w-5xl mx-auto px-4 py-5 space-y-8">
+      <main className="max-w-5xl mx-auto px-4 py-6 space-y-8">
         {/* توضیح کلی */}
         <section>
-          <h1 className="text-xl font-extrabold text-gray-900 mb-1">
+          <h1 className="text-2xl font-extrabold text-gray-900 mb-2">
             انتخاب صرافی یا سایت برای احراز هویت
           </h1>
-          <p className="text-xs text-gray-600">
+          <p className="text-sm text-gray-600">
             یکی از کارت‌های زیر را انتخاب کنید تا برای همان سرویس مستقیماً در
             تلگرام گفتگو را شروع کنید.
           </p>
@@ -88,34 +88,34 @@ export default function Home() {
 
         {/* صرافی‌ها */}
         <section>
-          <h2 className="text-sm font-bold text-gray-900 mb-2">
+          <h2 className="text-base font-bold text-gray-900 mb-3">
             صرافی‌های ارز دیجیتال
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {exchangeServices.map((s) => (
               <a
                 key={s.id}
                 href={`https://t.me/YourUsername?start=${s.id}-kyc`}
-                className="border border-gray-200 rounded-xl bg-white shadow-[0_4px_14px_rgba(0,0,0,0.04)] px-3 py-3 flex flex-col gap-2 active:scale-[0.98] transition-transform"
+                className="border border-gray-200 rounded-2xl bg-white shadow-[0_4px_18px_rgba(0,0,0,0.06)] px-4 py-4 flex flex-col gap-3 active:scale-[0.98] transition-transform"
               >
                 {s.image && (
                   <div className="w-full flex justify-center">
                     <img
                       src={s.image}
                       alt={s.name}
-                      className="h-16 w-auto object-contain rounded-md"
+                      className="h-24 w-auto object-contain rounded-md"
                       loading="lazy"
                     />
                   </div>
                 )}
                 <div className="flex-1 flex flex-col justify-between">
-                  <p className="text-[11px] font-semibold text-gray-900 line-clamp-2">
+                  <p className="text-[14px] font-semibold text-gray-900 line-clamp-2">
                     {s.name}
                   </p>
-                  <p className="mt-1 text-[10px] text-gray-600 line-clamp-3">
+                  <p className="mt-1 text-[12px] text-gray-600 line-clamp-3">
                     {s.desc}
                   </p>
-                  <div className="mt-2 flex items-center gap-1 text-[10px] text-yellow-700">
+                  <div className="mt-2 flex items-center gap-1 text-[12px] text-yellow-700">
                     <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
                     <span>شروع احراز در تلگرام</span>
                   </div>
@@ -127,34 +127,34 @@ export default function Home() {
 
         {/* فریلنسری‌ها */}
         <section>
-          <h2 className="text-sm font-bold text-gray-900 mb-2">
+          <h2 className="text-base font-bold text-gray-900 mb-3">
             سایت‌های فریلنسری و درآمد دلاری
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {freelanceServices.map((s) => (
               <a
                 key={s.id}
                 href={`https://t.me/YourUsername?start=${s.id}-kyc`}
-                className="border border-gray-200 rounded-xl bg-white shadow-[0_4px_14px_rgba(0,0,0,0.04)] px-3 py-3 flex flex-col gap-2 active:scale-[0.98] transition-transform"
+                className="border border-gray-200 rounded-2xl bg-white shadow-[0_4px_18px_rgba(0,0,0,0.06)] px-4 py-4 flex flex-col gap-3 active:scale-[0.98] transition-transform"
               >
                 {s.image && (
                   <div className="w-full flex justify-center">
                     <img
                       src={s.image}
                       alt={s.name}
-                      className="h-16 w-auto object-contain rounded-md"
+                      className="h-24 w-auto object-contain rounded-md"
                       loading="lazy"
                     />
                   </div>
                 )}
                 <div className="flex-1 flex flex-col justify-between">
-                  <p className="text-[11px] font-semibold text-gray-900 line-clamp-2">
+                  <p className="text-[14px] font-semibold text-gray-900 line-clamp-2">
                     {s.name}
                   </p>
-                  <p className="mt-1 text-[10px] text-gray-600 line-clamp-3">
+                  <p className="mt-1 text-[12px] text-gray-600 line-clamp-3">
                     {s.desc}
                   </p>
-                  <div className="mt-2 flex items-center gap-1 text-[10px] text-yellow-700">
+                  <div className="mt-2 flex items-center gap-1 text-[12px] text-yellow-700">
                     <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
                     <span>شروع احراز در تلگرام</span>
                   </div>
@@ -165,17 +165,17 @@ export default function Home() {
         </section>
 
         {/* ثبت نظر */}
-        <section className="mb-10 rounded-2xl border border-gray-200 bg-gray-50 px-4 py-4 space-y-2">
-          <h2 className="text-sm font-bold text-gray-900">
+        <section className="mb-10 rounded-2xl border border-gray-200 bg-gray-50 px-4 py-5 space-y-2">
+          <h2 className="text-base font-bold text-gray-900">
             ثبت نظر و امتیاز درباره خدمات
           </h2>
-          <p className="text-[11px] text-gray-700">
+          <p className="text-[12px] text-gray-700">
             بعد از انجام احراز، لطفاً تجربه‌تان را بفرستید تا کیفیت خدمات بهتر
             شود.
           </p>
           <a
             href="https://t.me/YourUsername"
-            className="inline-block text-xs bg-black text-yellow-300 px-3 py-1.5 rounded-full font-semibold"
+            className="inline-block text-sm bg-black text-yellow-300 px-4 py-1.5 rounded-full font-semibold"
           >
             ارسال نظر در تلگرام
           </a>
