@@ -19,7 +19,7 @@ const exchangeServices: Service[] = [
     image: "/download (5).png",
     detailTitle: "بایننس چیست و چرا احراز هویت مهم است؟",
     detailBody:
-      "بایننس یکی از بزرگ‌ترین صرافی‌های ارز دیجیتال دنیاست که حجم معاملات بالایی دارد. با احراز هویت، سقف برداشت شما بالا می‌رود، امکان استفاده از فیوچرز و برخی امکانات دیگر باز می‌شود و ریسک مسدود شدن حساب به خاطر آی‌پی و تغییر کشور کمتر می‌شود.",
+      "بایننس یکی از بزرگ‌ترین صرافی‌های ارز دیجیتال دنیاست. با احراز هویت، سقف برداشت بالا می‌رود، دسترسی کامل‌تری به معاملات و امکانات صرافی می‌گیرید و ریسک مسدود شدن حساب کمتر می‌شود.",
   },
   {
     id: "kucoin",
@@ -28,7 +28,7 @@ const exchangeServices: Service[] = [
     image: "/download (6).png",
     detailTitle: "صرافی KuCoin و مزیت احراز هویت",
     detailBody:
-      "کوکوین صرافی محبوبی برای معامله آلت‌کوین‌هاست. بعد از احراز هویت، محدودیت برداشت کمتر می‌شود، امکان استفاده از سرویس‌های بیشتری را دارید و احتمال محدود شدن حساب به خاطر فعالیت مشکوک کمتر می‌شود.",
+      "کوکوین برای معامله آلت‌کوین‌ها بسیار محبوب است. بعد از انجام KYC، محدودیت برداشت کمتر می‌شود و در صورت بروز مشکل، امکان پیگیری و پشتیبانی حساب راحت‌تر است.",
   },
   {
     id: "mexc",
@@ -37,7 +37,7 @@ const exchangeServices: Service[] = [
     image: "/download (7).png",
     detailTitle: "چرا احراز هویت در MEXC انجام دهیم؟",
     detailBody:
-      "MEXC به‌خاطر تعداد زیاد کوین‌ها و فی کم معروف است. با انجام KYC می‌توانید راحت‌تر واریز و برداشت انجام دهید، سقف برداشت افزایش پیدا می‌کند و در صورت بروز مشکل، امکان پیگیری حساب بهتر است.",
+      "MEXC به‌خاطر تعداد زیاد کوین‌ها و کارمزد پایین معروف است. با احراز هویت، واریز و برداشت‌ها مطمئن‌تر می‌شود و دسترسی‌تان به امکانات صرافی کامل‌تر خواهد بود.",
   },
   {
     id: "gate",
@@ -46,7 +46,7 @@ const exchangeServices: Service[] = [
     image: "/download (8).png",
     detailTitle: "Gate.io و اهمیت KYC",
     detailBody:
-      "Gate.io صرافی قدیمی و شناخته‌شده‌ای است که برای دسترسی کامل به امکانات آن، احراز هویت الزامی است. انجام KYC امنیت حساب را بالا می‌برد و سقف برداشت و استفاده از بازارهای مختلف را آزاد می‌کند.",
+      "Gate.io یک صرافی قدیمی و قابل‌اعتماد است. برای استفاده از همه‌ی امکانات و افزایش سقف برداشت، انجام KYC ضروری است و امنیت حساب شما را بالاتر می‌برد.",
   },
   {
     id: "okx",
@@ -55,7 +55,7 @@ const exchangeServices: Service[] = [
     image: "/download (10).png",
     detailTitle: "مزایای احراز هویت در OKX",
     detailBody:
-      "OKX یکی از صرافی‌های مطرح برای فیوچرز و آپشن است. با انجام احراز هویت، محدودیت برداشت کاهش می‌یابد، دسترسی شما به ابزارهای معاملاتی کامل‌تر می‌شود و ریسک بلاک شدن حساب کمتر خواهد بود.",
+      "OKX برای معاملات فیوچرز و آپشن گزینه‌ی جدی است. با انجام احراز هویت، محدودیت برداشت کاهش می‌یابد و ریسک قفل شدن حساب در اثر تغییر آی‌پی یا حجم معاملات کمتر می‌شود.",
   },
 ];
 
@@ -65,18 +65,18 @@ const freelanceServices: Service[] = [
     name: "احراز حساب Fiverr",
     desc: "تأیید هویت فریلنسری در Fiverr برای واریز امن درآمد",
     image: "/download (9).png",
-    detailTitle: "Fiverr چیست و چرا تأیید هویت مهم است؟",
+    detailTitle: "Fiverr و اهمیت تأیید هویت",
     detailBody:
-      "Fiverr یکی از بزرگ‌ترین سایت‌های فریلنسری دنیاست. با انجام احراز هویت، حساب شما معتبرتر می‌شود، ریسک مسدود شدن موجودی کاهش می‌یابد و راحت‌تر می‌توانید پرداخت‌ها را دریافت کنید.",
+      "Fiverr یکی از بزرگ‌ترین سایت‌های فریلنسری دنیاست. احراز هویت باعث اعتماد بیشتر سایت و خریدارها به پروفایل شما می‌شود و ریسک مسدود شدن درآمد را کم می‌کند.",
   },
   {
     id: "upwork",
     name: "احراز حساب Upwork",
     desc: "تأیید هویت حساب Upwork و رفع محدودیت‌های برداشت",
     image: "/download (11).png",
-    detailTitle: "اهمیت KYC در Upwork",
+    detailTitle: "چرا در Upwork KYC انجام دهیم؟",
     detailBody:
-      "Upwork یک پلتفرم حرفه‌ای برای دورکاری است. بدون احراز هویت، امکان برداشت و استفاده کامل از امکانات سایت محدود می‌شود. با تأیید هویت، حساب شما رسمی‌تر می‌شود و کارفرماها اعتماد بیشتری می‌کنند.",
+      "Upwork پلتفرم حرفه‌ای برای کار دورکاری است. بدون KYC، برداشت و کار با حساب محدود می‌شود. با احراز هویت، حساب شما رسمی‌تر و قابل‌اعتمادتر می‌شود.",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function Home() {
   const [selectedService, setSelectedService] = useState<Service | null>(null);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white flex flex-col">
       {/* هدر */}
       <header className="sticky top-0 z-20 border-b border-yellow-400/60 bg-black text-white">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -110,14 +110,14 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="max-w-5xl mx-auto px-4 py-6 space-y-8">
+      <main className="flex-1 max-w-5xl mx-auto px-4 py-6 space-y-8">
         {/* توضیح کلی */}
         <section>
           <h1 className="text-2xl font-extrabold text-gray-900 mb-2">
             انتخاب صرافی یا سایت برای احراز هویت
           </h1>
           <p className="text-sm text-gray-600">
-            روی هر کارت بزنید تا توضیحات کامل آن سرویس و لینک مستقیم تلگرام برای
+            روی هر کارت بزنید تا توضیحات همان سرویس و لینک مستقیم تلگرام برای
             شروع احراز هویت را ببینید.
           </p>
         </section>
@@ -185,7 +185,7 @@ export default function Home() {
                     />
                   </div>
                 )}
-                <div className="flex-1 flex flex-col justify-between">
+                <div className="flex-1 flex flex-col justify_between">
                   <p className="text-[14px] font-semibold text-gray-900 line-clamp-2">
                     {s.name}
                   </p>
@@ -202,6 +202,24 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      {/* فوتر سایت */}
+      <footer className="border-t border-gray-200 bg-black text-yellow-300">
+        <div className="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[12px] sm:text-sm">
+          <p className="text-gray-300">
+            ارائه خدمات احراز هویت صرافی‌ها و سایت‌های فریلنسری
+          </p>
+          <div className="flex items-center gap-3">
+            <span className="text-gray-400">ارتباط در تلگرام:</span>
+            <a
+              href="https://t.me/Kyc_servicex"
+              className="font-semibold text-yellow-300 underline underline-offset-4"
+            >
+              @Kyc_servicex
+            </a>
+          </div>
+        </div>
+      </footer>
 
       {/* مودال توضیحات سرویس */}
       {selectedService && (
@@ -236,8 +254,8 @@ export default function Home() {
 
             <div className="border-t border-gray-200 pt-3 space-y-2">
               <p className="text-[12px] text-gray-600">
-                برای شروع احراز هویت همین سرویس، روی دکمه زیر بزنید تا مستقیم وارد
-                گفتگو در تلگرام شوید.
+                برای شروع احراز هویت همین سرویس، روی دکمه‌ی زیر بزنید تا مستقیم
+                وارد گفتگو در تلگرام شوید.
               </p>
               <a
                 href={`https://t.me/Kyc_servicex?start=${selectedService.id}-kyc`}
@@ -252,4 +270,3 @@ export default function Home() {
     </div>
   );
 }
-
