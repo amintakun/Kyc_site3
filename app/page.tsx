@@ -66,7 +66,7 @@ export default function Home() {
             </div>
           </div>
           <a
-            href="https://t.me/YourUsername"
+            href="https://t.me/Kyc_servicex"
             className="text-sm bg-yellow-400 text-black px-4 py-1.5 rounded-full font-semibold hover:bg-yellow-300"
           >
             گفتگو در تلگرام
@@ -95,7 +95,7 @@ export default function Home() {
             {exchangeServices.map((s) => (
               <a
                 key={s.id}
-                href={`https://t.me/YourUsername?start=${s.id}-kyc`}
+                href={`https://t.me/Kyc_servicex?start=${s.id}-kyc`}
                 className="border border-gray-200 rounded-2xl bg-white shadow-[0_4px_18px_rgba(0,0,0,0.06)] px-4 py-4 flex flex-col gap-3 active:scale-[0.98] transition-transform"
               >
                 {s.image && (
@@ -134,7 +134,7 @@ export default function Home() {
             {freelanceServices.map((s) => (
               <a
                 key={s.id}
-                href={`https://t.me/YourUsername?start=${s.id}-kyc`}
+                href={`https://t.me/Kyc_servicex?start=${s.id}-kyc`}
                 className="border border-gray-200 rounded-2xl bg-white shadow-[0_4px_18px_rgba(0,0,0,0.06)] px-4 py-4 flex flex-col gap-3 active:scale-[0.98] transition-transform"
               >
                 {s.image && (
@@ -174,7 +174,7 @@ export default function Home() {
             شود.
           </p>
           <a
-            href="https://t.me/YourUsername"
+            href="https://t.me/Kyc_servicex"
             className="inline-block text-sm bg-black text-yellow-300 px-4 py-1.5 rounded-full font-semibold"
           >
             ارسال نظر در تلگرام
