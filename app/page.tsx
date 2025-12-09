@@ -203,7 +203,7 @@ export default function Home() {
         </section>
       </main>
 
-      {/* فوتر سایت */}
+      {/* فوتر با آیدی و کانال تلگرام */}
       <footer className="border-t border-gray-200 bg-black text-yellow-300">
         <div className="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[12px] sm:text-sm">
           <p className="text-gray-300">
@@ -216,6 +216,13 @@ export default function Home() {
               className="font-semibold text-yellow-300 underline underline-offset-4"
             >
               @Kyc_servicex
+            </a>
+            <span className="text-gray-500">|</span>
+            <a
+              href="https://t.me/kyc_servicei"
+              className="font-semibold text-yellow-300 underline underline-offset-4"
+            >
+              کانال تلگرام ما
             </a>
           </div>
         </div>
